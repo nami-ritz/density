@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
 {
     public GameObject Cube;
     public Slider VolumeSlider;
-    private float volume = 0.5f;
+    private float volume = 1;
 
     void Update()
     {
@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
     }
     
     public void GenerateCube(){
-        GameObject spawner = Instantiate(Cube, new Vector3(0, 8, 0), Quaternion.identity);
+        GameObject spawner = Instantiate(Cube, new Vector3(0, 15, -5), Quaternion.identity);
         spawner.transform.localScale = new Vector3(volume, volume, volume);    
     }
 
