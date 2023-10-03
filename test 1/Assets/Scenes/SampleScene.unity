@@ -5907,7 +5907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 299, y: -173}
+  m_AnchoredPosition: {x: 331.8, y: -199.8}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921206325
@@ -5924,8 +5924,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitMenu: {fileID: 411713538}
   Button: {fileID: 1921206326}
-  YesButton: {fileID: 128319710}
-  NoButton: {fileID: 1539671688}
 --- !u!114 &1921206326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6057,7 +6055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251, y: 151.25233}
+  m_AnchoredPosition: {x: 251, y: 151.25233}
   m_SizeDelta: {x: 150, y: 48.9907}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1971734854

@@ -23,6 +23,9 @@ public class Water : MonoBehaviour
             Cube.GetComponent<CubeScript>().underwater = true;
             collidingCubes.Add(Cube);
             Cube.GetComponent<Rigidbody>().drag += density/1000;  // drag due to viscosity of water
+            if(!Cube.GetComponent<CubeScript>().held){
+                Cube.GetComponent<Rigidbody>().velocity /= Mathf.Pow(density/100, 1/3f) + 0.2f;
+            }
         }     
     }
 
@@ -35,6 +38,9 @@ public class Water : MonoBehaviour
             }    
             collidingCubes.Remove(Cube);
             Cube.GetComponent<Rigidbody>().drag = 0;
+            if (!Cube.GetComponent<CubeScript>().held) {
+                Cube.GetComponent<Rigidbody>().velocity /= Mathf.Pow(density/100, 1/3f) + 0.2f;
+            }
         }
     } 
 
