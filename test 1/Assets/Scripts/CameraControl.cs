@@ -10,6 +10,8 @@ public class CameraControl : MonoBehaviour
     public float zoomLowerLimit = 5;
     public float zoomUpperLimit = 10;
     public float zoomScale = 50.0f;
+    public float initialZPos = 25.54782f;
+    public float zoomQuotient = 1f;
     
 
     void Update()
@@ -34,6 +36,7 @@ public class CameraControl : MonoBehaviour
             if ((check.z > zoomLowerLimit && check.z < zoomUpperLimit))
             {
                 transform.position = transform.position + (transform.forward * zoomDiff* zoomScale);
+                zoomQuotient = MathF.Sqrt(-transform.position.z / initialZPos);
             }
         }
     }

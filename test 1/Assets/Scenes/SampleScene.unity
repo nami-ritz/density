@@ -3425,6 +3425,8 @@ MonoBehaviour:
   zoomLowerLimit: -45
   zoomUpperLimit: -9
   zoomScale: 25
+  initialZPos: 25.54782
+  zoomQuotient: 1
 --- !u!224 &1030014413 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3492798629113102928, guid: fd45069868b6a9f4482429f139ed42e1, type: 3}
